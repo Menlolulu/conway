@@ -8,7 +8,7 @@ WIDTH = 1280
 HEIGHT = 720
 
 # CELL_SIZE = math.gcd(WIDTH, HEIGHT)
-CELL_SIZE = 20
+CELL_SIZE = 15
 
 CELLS_X = int(WIDTH / CELL_SIZE)
 CELLS_Y = int(HEIGHT / CELL_SIZE)
@@ -27,7 +27,7 @@ for x in range(CELLS_X):
         inner.append(random.randint(0, 1))
     cells.append(inner)
 
-REFRESH_DELAY = 3
+REFRESH_DELAY = 8
 refresh_counter = REFRESH_DELAY
 
 clock = pygame.time.Clock()
